@@ -158,7 +158,7 @@ func (pc DonutChart) drawSlices(r Renderer, canvasBox Box, values []Value) {
 	})
 	v.Style.InheritFrom(styletemp).WriteToRenderer(r)
 	r.MoveTo(cx, cy)
-	r.ArcTo(cx, cy, (radius * .9), (radius * .9), DegreesToRadians(0), DegreesToRadians(360))
+	r.ArcTo(cx, cy, (radius / 1.25), (radius / 1.25), DegreesToRadians(0), DegreesToRadians(360))
 	r.LineTo(cx, cy)
 	r.Close()
 	r.FillStroke()
