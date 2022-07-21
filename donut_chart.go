@@ -142,7 +142,7 @@ func (pc DonutChart) drawSlices(r Renderer, canvasBox Box, values []Value) {
 			rads = PercentToRadians(total)
 			delta = PercentToRadians(v.Value)
 
-			r.ArcTo(cx, cy, (radius / 1.25), (radius / 1.25), rads, delta)
+			r.ArcTo(cx, cy, radius, radius, rads - 3.14159 / 2, delta)
 
 			r.LineTo(cx, cy)
 			r.Close()
