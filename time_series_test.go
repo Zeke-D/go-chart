@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/wcharczuk/go-chart/v2/testutil"
+	"github.com/Zeke-D/go-chart/v2/testutil"
 )
 
 func TestTimeSeriesGetValue(t *testing.T) {

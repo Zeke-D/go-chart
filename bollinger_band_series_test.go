@@ -5,7 +5,7 @@ import (
 	"math"
 	"testing"
 
-	"github.com/wcharczuk/go-chart/v2/testutil"
+	"github.com/Zeke-D/go-chart/v2/testutil"
 )
 
 func TestBollingerBandSeries(t *testing.T) {
